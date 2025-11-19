@@ -50,7 +50,7 @@ class Ingredient {
             case "ternera": return 2.2;
             case "barbacoa": return 1;
             case "picante": return 0.9;
-            case "borde": return 1.2;
+            case "borde": return 0.3; // esta mal, pero como va a asumir que queso es un ingrediente extra, es una forma de equilibrar
         }
     }
 }

@@ -7,10 +7,6 @@ class Pizza {
         this.getData()
     }
 
-    addIngredients(ingrd) {
-        this.ingredients.push(ingrd);
-    }
-
     getData() {
         switch (this.name.toLowerCase()) {
             case "margherita": this.price = 9.3; this.ticketName = "MARGHERITA"; break;
@@ -18,12 +14,6 @@ class Pizza {
             case "funghi": this.price = 12.5; this.ticketName = "PROSCIUTTO E FUNGHI"; break;            
             case "stagioni": this.price = 12.5; this.ticketName = "4 STAGIONI"; break;
         }
-    }
-
-    calculatePrice() {
-        this.ingredients.forEach(i => {
-            this.price += i.price;
-        });
     }
 }
 
@@ -94,7 +84,7 @@ function processTextAndCreateTicket(text) {
 
 const texts = [
     "Prosciutto e Funghi con extra de queso y extra de anchoas",
-    "Prosciutto con jamon dulce, bordes rellenos, salsa picante y anchoas",
+    "Prosciutto con jamon dulce, borde relleno de queso, salsa picante y anchoas",
     "4 Stagioni con extra queso mozzarella, tomate natural y olivas"
 ]
 
